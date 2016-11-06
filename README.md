@@ -1,70 +1,14 @@
-<p align="center">
-  <img src="https://cdn.rawgit.com/crossjs/plato/master/src/assets/logo.svg" alt="PLATO"><br>
-  <sub>Based on Vue 2.0</sub>
-</p>
-<p align="center">
-  <a href="https://travis-ci.org/crossjs/plato"><img src="https://img.shields.io/travis/crossjs/plato/dev.svg?style=flat-square" alt="Travis"></a>
-  <a href="https://coveralls.io/github/crossjs/plato"><img src="https://img.shields.io/coveralls/crossjs/plato/dev.svg?style=flat-square" alt="Coveralls"></a>
-  <a href="https://david-dm.org/crossjs/plato"><img src="https://img.shields.io/david/crossjs/plato.svg?style=flat-square" alt="dependencies"></a>
-  <a href="https://david-dm.org/crossjs/plato?type=dev"><img src="https://img.shields.io/david/dev/crossjs/plato.svg?style=flat-square" alt="devDependency Status"></a>
-</p>
-<p align="center">
-  a Boilerplate for mobile SPAs use vue, vuex, vue-router<br>
-  Check out <a href="http://plato.crossjs.com/#/demos"><b>Demonstrations</b></a> and <a href="src/components/README.md"><b>README</b></a> for UI Components
-</p>
+# PLATO
+
+This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
 ## Usage
 
 ```bash
-# install dependencies
-npm install
+npm install -g vue-cli
 
-# start a mocking server at localhost:3001
-npm run mock
-
-# serve with hot reload at localhost:3000
-npm run dev
-
-# eslint, stylelint, unit and e2e test
-npm test
-
-# compile files for production with minification
-npm run compile
-
-# test, clean, and compile
-npm run build
-
-# serve dist, like production
-npm start
-
-# generate demo site and push to gh-pages
-npm run docs
-
-# push modifications to github
-npm run push
+vue init crossjs/plato#template <project-name>
 ```
-
-## Generator
-
-Use [generator-x](https://github.com/crossjs/generator-x) to get a clean and clear copy without demonstrations
-
-```bash
-# install yo and generator-x as a global module
-npm install -g yo
-npm install -g generator-x
-
-# generate code under project
-cd <your-awesome-project>
-yo x
-```
-
-## Appendix
-
-- [Troubleshooting](doc/TROUBLESHOOTING.md)
-- [Changelog](doc/CHANGELOG.md)
-- [Style Guide](doc/STYLEGUIDE.md)
-- [Developing Guide](doc/DEVELOPING.md)
-- [Contributing Guide](doc/CONTRIBUTING.md)
 
 ## License
 
