@@ -25,12 +25,6 @@ npm run build
 
 # serve dist, like production
 npm start
-
-# generate demo site and push to gh-pages
-npm run docs
-
-# push modifications to github
-npm run push
 ```
 
 ## Appendix
