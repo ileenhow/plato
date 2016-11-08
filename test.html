@@ -1,0 +1,43 @@
+<script src="https://unpkg.com/vue@2.0.5/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router@2.0.1/dist/vue-router.js"></script>
+<div id="app">
+  <h1>Hello App!</h1>
+  <p>
+    <router-link to="/">Go to /</router-link>
+  </p>
+  <p>
+    <router-link to="/foo">Go to Foo<br>
+      click me first, then click the back button in navigation bar.
+    </router-link>
+  </p>
+  <p>
+    First time click the back button, `beforeRouteLeave` will be called as expected.
+  </p>
+  <p>
+    But when click again, `beforeRouteLeave` will NOT be called.
+  </p>
+  <hr>
+  <router-view></router-view>
+</div>
+<script>
+var Foo = {
+  template: '<p><b>from bar component</b></p>',
+  beforeRouteLeave: function (to, from, next) {
+    alert('call leave')
+    next(false)
+  }
+}
+
+var routes = [
+  { path: '/' },
+  { path: '/foo', component: Foo }
+]
+
+var router = new VueRouter({
+  routes: routes // short for routes: routes
+})
+
+var app = new Vue({
+  router: router
+}).$mount('#app')
+</script>
