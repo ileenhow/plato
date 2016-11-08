@@ -42,7 +42,7 @@
     "babel-register": "^6.18.0",
     "bundle-loader": "^0.5.4",
     "chai": "^3.5.0",
-    "chromedriver": "~2.25.1",
+    "chromedriver": "^2.25.1",
     "copy-webpack-plugin": "^4.0.0",
     "core-js": "^2.4.1",
     "cross-env": "^3.1.3",
